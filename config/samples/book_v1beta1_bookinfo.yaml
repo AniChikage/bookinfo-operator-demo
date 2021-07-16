@@ -1,0 +1,7 @@
+apiVersion: book.example.org/v1beta1
+kind: BookInfo
+metadata:
+  name: bookinfo-sample
+spec:
+  # Add fields here
+  foo: bar
