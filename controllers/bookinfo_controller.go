@@ -79,8 +79,7 @@ func (r *BookinfoReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 		return ctrl.Result{Requeue: true}, nil
-	}
-	else if err != nil {
+	} else if err != nil {
 		return ctrl.Result{}, err
 	}
 
@@ -98,8 +97,7 @@ func (r *BookinfoReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 		return ctrl.Result{Requeue: true}, nil
-	}
-	else if err != nil {
+	} else if err != nil {
 		log.Error(err, "Failed to get Deployment")
 		return ctrl.Result{}, err
 	}
@@ -114,8 +112,7 @@ func (r *BookinfoReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 		return ctrl.Result{Requeue: true}, nil
-	}
-	else if err != nil {
+	} else if err != nil {
 		return ctrl.Result{}, err
 	}
 
@@ -135,8 +132,7 @@ func (r *BookinfoReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 		return ctrl.Result{Requeue: true}, nil
-	}
-	else if err != nil {
+	} else if err != nil {
 		log.Error(err, "Failed to get Deployment")
 		return ctrl.Result{}, err
 	}
@@ -151,8 +147,7 @@ func (r *BookinfoReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 		return ctrl.Result{Requeue: true}, nil
-	}
-	else if err != nil {
+	} else if err != nil {
 		return ctrl.Result{}, err
 	}
 
