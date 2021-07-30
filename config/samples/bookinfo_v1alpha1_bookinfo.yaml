@@ -1,0 +1,8 @@
+apiVersion: bookinfo.demo.com/v1alpha1
+kind: Bookinfo
+metadata:
+  name: bookinfo-sample
+spec:
+  # Add fields here
+  replicas: 1
+  sqlrootpassword: pmet123456
