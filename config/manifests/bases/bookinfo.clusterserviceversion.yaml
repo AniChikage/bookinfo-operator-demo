@@ -1,0 +1,47 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: bookinfo.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Bookinfo is the Schema for the bookinfoes API
+      displayName: Bookinfo
+      kind: Bookinfo
+      name: bookinfos.bookinfo.demo.com
+      version: v1alpha1
+  description: bookinfo desc
+  displayName: bookinfo
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - bookinfo
+  links:
+  - name: Bookinfo
+    url: https://bookinfo.domain
+  maintainers:
+  - email: hnzhis@cn.ibm.com
+    name: hanzhis
+  maturity: alpha
+  provider:
+    name: ibm
+  version: 0.0.0
